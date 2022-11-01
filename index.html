@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Spectrum</title>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">Acerca de mi</a></li>
+          <li><a href="#services">Marco Laboral</a></li>
+          <li><a href="#portfolio">Productos</a></li>
+          <li><a href="#contact">Contacto</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Desarrollo Web Full Stack</p>
+        <h1>Soy <span>Luis Alcántara</span><br> de Trujillo, Perú.</h1>
+
+      </div>
+    </div>
+  </div>
+<!------------------------------------acerca de mi--------------------->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/yo.png" alt="">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-tittle">Acerca de mi</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque eos suscipit ratione similique fuga, dicta cupiditate culpa maxime nostrum praesentium alias optio quod, temporibus voluptate a, minus incidunt debitis. Deserunt!</p>
+          
+          <div class="tab-tittles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Desarrollo Web</span><br>HTML/CSS</li>
+              <li><span>Lenguaje de Programación</span><br>JavaScript</li>
+              <li><span>Diseño de Audio</span><br>Ableton Live DAW</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Diseño de Audio</span><br>Digital Audio Workstation</li>
+              <li><span>Desarrollo Web</span><br>Certus</li>
+              <li><span>Traducción e Interpretación</span><br>Starkey</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>Desarrollo Web</span><br>CERTUS</li>
+              <li><span>Diseño de Audio</span><br>Ableton Live</li>
+              <li><span>Traducción e Interpretación</span><br>Ingles - Frances</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-------------------------------Services-------------------------------->
+
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-tittle">Marco laboral</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Desarrollo Web</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsa corporis quibusdam itaque eligendi placeat odit voluptates voluptas ex cumque? Repudiandae, maxime totam! Sunt voluptates, iusto non quis dignissimos aperiam.</p>
+          <a href="#">Ver mas</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-sliders"></i>
+          <h2>Diseño de Audio</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsa corporis quibusdam itaque eligendi placeat odit voluptates voluptas ex cumque? Repudiandae, maxime totam! Sunt voluptates, iusto non quis dignissimos aperiam.</p>
+          <a href="#">Ver mas</a>
+        </div>       
+         <div>
+          <i class="fa-solid fa-language"></i>
+          <h2>Traducción e Interpretación</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsa corporis quibusdam itaque eligendi placeat odit voluptates voluptas ex cumque? Repudiandae, maxime totam! Sunt voluptates, iusto non quis dignissimos aperiam.</p>
+          <a href="#">Ver mas</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-------------------portafolio------------------------------------------>
+
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-tittle">Productos</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="images/pic1.jpg">
+        <div class="layer">
+          <h3>Chiral</h3>
+          <p>Chiral es un sintetizador holográfico habilitado para MPE creado para fomentar la experimentación a través de la modulación de fase, la modulación de amplitud y una amplia matriz de modulación. </p>
+          <a href=""><i class="fa-solid fa-download"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/pic2.jpg">
+        <div class="layer">
+          <h3>Slink</h3>
+          <p>Genere efectos espectrales alucinantes, modulación sutil de estilo analógico e ideas melódicas impredecibles y en evolución, todo controlado por el motor de onda Slink excepcionalmente flexible.</p>
+          <a href=""><i class="fa-solid fa-download"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/pic3.jpg">
+        <div class="layer">
+          <h3>OctaCell</h3>
+          <p>OctoCell combina síntesis aditiva, FM y sustractiva en una interfaz accesible. Apile hasta ocho osciladores, cada uno con sus propias opciones de FM individuales, y marque una variedad de posibilidades de modulación y envolvente para crear sonidos ricos y en evolución.</p>
+          <a href=""><i class="fa-solid fa-download"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/pic4.jpg">
+        <div class="layer">
+          <h3>IBN</h3>
+          <p>Produzca paisajes sonoros generativos, melodías impredecibles y modulaciones en evolución con dispositivos inspirados en las fuerzas físicas y el mundo natural.</p>
+          <a href=""><i class="fa-solid fa-download"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/pic20.jpg">
+        <div class="layer">
+          <h3>Ensemble</h3>
+          <p>Desde ondas rítmicas precisas hasta extensas estelas de vapor, explora el espacio y el tiempo de tu sonido con una diversa variedad de retardos y reverberaciones reunidas en una colección inspiradora y versátil.</p>
+          <a href=""><i class="fa-solid fa-download"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/pic6.jpg">
+        <div class="layer">
+          <h3>Pallas</h3>
+          <p>Enriquece tu colección de sintetizadores con tres de nuestros dispositivos más populares, todos de Max for Cats. Explore los tonos complejos de la síntesis FM, el valor y el carácter de los sintetizadores analógicos y las ilimitadas posibilidades creativas de la síntesis modular.</p>
+          <a href=""><i class="fa-solid fa-download"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/pic7.jpg">
+        <div class="layer">
+          <h3>Grain Scanner</h3>
+          <p>Grain Scanner te permite diseñar ruidos experimentales, efectos defectuosos, texturas alienígenas y enormes nubes de ambiente. Su motor de sonido avanzado convierte cualquier muestra en una pizarra en blanco para partes de sintetizador de otro mundo.</p>
+          <a href=""><i class="fa-solid fa-download"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/pic8.jpg">
+        <div class="layer">
+          <h3>CV Instrument</h3>
+          <p>Con más de 120 racks de batería e instrumentos, más de 180 bucles para trocear, cadenas de efectos ajustables y más, Beat Tools tiene todos los sonidos que necesita para crear ritmos con manos, especialmente con Push.</p>
+          <a href=""><i class="fa-solid fa-download"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/pic9.jpg">
+        <div class="layer">
+          <h3>Dr. Chaos</h3>
+          <p>Una colección de secuenciadores creativos que introducen la probabilidad y el azar en tu música.</p>
+          <a href=""><i class="fa-solid fa-download"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/pic10.jpg">
+        <div class="layer">
+          <h3>Spectral Blur</h3>
+          <p>Creative Extensions es una adición gratuita a Live 10 Suite creada con un enfoque experimental para el procesamiento de sonido y la composición generativa.</p>
+          <a href=""><i class="fa-solid fa-download"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/pic11.jpg">
+        <div class="layer">
+          <h3>Surround Panner</h3>
+          <p>Simplemente cargue el dispositivo en una pista en su conjunto en vivo y use el control XY para colocarlo en cualquier lugar del campo envolvente. Ocho preajustes le permiten elegir entre configuraciones de cuatro, seis y ocho canales.</p>
+          <a href=""><i class="fa-solid fa-download"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/pic12.jpg">
+        <div class="layer">
+          <h3>Convolution Reverb</h3>
+          <p>Convolution Reverb es un dispositivo creativo para traer un nuevo espacio a sus sonidos: un conjunto de reverberación basado en muestras con cientos de respuestas de impulso de espacios del mundo real y hardware de clase mundial.</p>
+          <a href=""><i class="fa-solid fa-download"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/pic13.jpg">
+        <div class="layer">
+          <h3>Iota</h3>
+          <p>Dirigido a músicos electrónicos, diseñadores de sonido y artistas de instalación, Iota es un instrumento de bucle granular de Max For Live que extrae un potencial creativo infinito incluso de las muestras más simples, a través de una interfaz gráfica inspiradora.</p>
+          <a href=""><i class="fa-solid fa-download"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/pic14.jpg">
+        <div class="layer">
+          <h3>MidiVolve</h3>
+          <p>Este arpegiador, generador de riffs y secuenciador de Max For Live convierte incluso los patrones MIDI más simples en un continuo musical en evolución, y viene con una colección de racks de efectos e instrumentos híbridos electrónicos/acústicos que capturan los sonidos clásicos y contemporáneos de las leyendas de la música electrónica Coldcut.</p>
+          <a href=""><i class="fa-solid fa-download"></i></a>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="btn">Ver Mas</a>
+  </div>
+</div>
+
+<!-----------------Contacto----------------->
+
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-tittle">Contactame</h1>
+        <p><i class="fa-solid fa-envelope"></i> luisalcaloide.105@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> 948116207</p>
+        <div class="social-icons">
+          <a href="https://www.youtube.com/channel/UCrAgdz7Phxcq94g_btH0W6g"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://unimalence.bandcamp.com/album/symbols-vol-i"><i class="fa-brands fa-bandcamp"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Name" required>
+          <input type="email" name="Email" placeholder="Email" required>
+          <textarea name="Message" rows="6" placeholder="Message"></textarea>
+          <button type="submit" class="btn btn2">Enviar</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Esta es una pagina de uso libre hecha con <i class="fa-solid fa-heart"></i></p>
+    <br>
+    <p>De Trujillo, Peru</p>
+  </div>
+</div>
+
+<script src="script/script.js"></script>
+
+</body>
+</html>
